@@ -1,0 +1,227 @@
+body  {  
+            font-size:13px; line-height:1;　font-weight: normal;
+	        font-family:'Meiryo','Hiragino Kaku Gothic ProN','MS P Gothic','Helvetica','Verdana','Arial',sans-serif; 
+            background-color: #8eb4bc;  }
+
+/*　----------ヘッダー----------　*/
+header {    
+            background-color: #fff;
+            opacity: 0.8;
+            width: 100%;
+            position: fixed; top: 0; left: 0;
+            z-index: 1000; }
+h1        { margin: 0; }
+#site_menu li { display: inline; }
+#site_menu li { 
+            margin-right: 20px;
+            border-right:1px solid #000;
+            padding-right: 20px; }
+#site_menu li:first-child{
+            border-left:1px solid #000;
+            margin-left: 20px;
+            padding-left: 20px; }
+            
+ /*　----------コンテンツ----------　*/
+#container { width: 100%; }
+
+ /*　----------コンテンツ　右---------　*/
+#container_right {  }
+ /*　----------コンテンツ　右上---------　*/
+#container_right_top #profile { 
+            color: #fff; 
+            text-align: center;
+}
+ /*　----------コンテンツ　右下画像---------　*/
+#container_right_bottom　{  }
+
+            
+ /*　----------コンテンツ　左---------　*/
+#container_left { 
+            position: relative; }
+.maru { 
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute; }
+.maru_body {
+            position: absolute;
+}
+
+
+/*　-------------------パソコン------------------　*/
+@media screen and (min-width:769px) {
+        /*　----------ヘッダー----------　*/
+header {  }
+h1 a {
+            float: left;
+            font-size: 30px; font-weight: normal;
+            margin: 15px 0 10px 20px; }
+#site_menu ul  {
+            float: right;
+            font-size: 15px; font-weight: normal;
+            margin: 20px 0; }
+#site_menu li { 
+            font-size: 13px; font-weight: normal; }
+        /*　----------コンテンツ----------　*/
+#container { margin-top: 55px; }
+        /*　----------コンテンツ　右----------　*/ 
+#container_right { 
+            width: 30%; height: 100%;
+            position: fixed; top: 0; right: 0;
+            margin-top: 55px; }
+#container_right_top {
+            font-size: 15px;
+            margin: 5vw auto; }
+         /*　----------コンテンツ　右下画像---------　*/
+#container_right_bottom img { 
+            width: 80%;
+            position: absolute; bottom: 50px; right: 0; }
+             /*　----------コンテンツ　左---------　*/
+#container_left { 
+            width: 70%; height: 1000px;
+            float: left; }
+#maru1 {  
+            width: 28%; padding: 28%;
+            top: 1vw; left: 1vw; }
+.maru_body { 
+            top: 20%; left: 0%; 
+            text-align: center;
+            font-size: 1.5vw; line-height: 1.5;
+            color: #8eb4bc; }
+.maru img {
+            width: 77%;  }
+#maru2 {  
+            width: 23%; padding: 23%;
+            top: 30vw; left: 35vw; }
+#maru3 {  
+            width: 24%; padding: 24%;
+            top: 50vw; left: 1vw; }
+#maru4 {  
+            width: 10%; padding: 10%;
+            top: 5vw; left: 43vw; }
+#maru5 {  
+            width: 5%; padding: 5%;
+            top: 18vw; left: 60vw; }
+#maru6 {  
+            width: 7%; padding: 7%;
+            top: 55vw; left: 35vw; }
+#maru7 {  
+            width: 10%; padding: 10%;
+            top: 70vw; left: 50vw; }
+}
+/*　-------------------タブレット------------------　*/
+@media screen and (max-width:768px) and (min-width:481px) {
+    
+       /*　----------ヘッダー----------　*/
+header {
+            text-align: center; }
+header h1 {
+            padding: 20px 0 10px  0;
+            font-size: 5vw; font-weight: normal; }
+#site_menu ul {
+            margin-bottom: 20px;
+            font-size: 2vw; font-weight: normal; }
+       /*　----------コンテンツ----------　*/
+#container { margin-top: 14%;
+             position: relative; }
+        /*　----------コンテンツ　右----------　*/ 
+#container_right { 
+            margin-top: 55px; }
+#container_right_top  #profile {
+            font-size: 15px;
+            margin: 110px 0 0 0; }
+            
+         /*　----------コンテンツ　右下画像---------　*/
+#container_right_bottom img { 
+            position: absolute;
+            top: 100vw; right: 3vw; 
+            width: 40%; }
+          /*　----------コンテンツ左---------　*/   
+
+.maru_body { 
+            top: 20%; left: 0%; 
+            text-align: center;
+            font-size: 1.8vw; line-height: 1.5;
+            color: #8eb4bc; }
+.maru img {
+            width: 77%;  }
+#maru1 {  
+            width: 28%; padding: 28%;
+            top: 1vw; left: 1vw; }
+#maru2 {  
+            width: 23%; padding: 23%;
+            top: 30vw; left: 50vw; }
+#maru3 {  
+            width: 24%; padding: 24%;
+            top: 70vw; left: 1vw; }
+#maru4 {  
+            width: 10%; padding: 10%;
+            top: 5vw; left: 60vw; }
+#maru5 {  
+            width: 5%; padding: 5%;
+            top: 18vw; left: 80vw; }
+#maru6 {  
+            width: 7%; padding: 7%;
+            top: 55vw; left: 35vw; }
+#maru7 {  
+            display: none; }
+    
+}
+
+
+/*　-------------------携帯------------------　*/
+@media screen and (max-width:480px) {
+       /*　----------ヘッダー----------　*/
+header {
+            text-align: center; }
+header h1 {
+            padding: 15px 0 5px 0;
+            font-size: 6.5vw; font-weight: normal; }
+#site_menu ul {
+            margin-bottom: 10px; 
+            font-size: 3vw; font-weight: normal; }
+         /*　----------コンテンツ----------　*/
+         #container { margin-top: 14%;
+             position: relative; }
+        /*　----------コンテンツ　右----------　*/ 
+#container_right { 
+            margin-top: 55px; }
+#container_right_top  #profile {
+            font-size: 15px;
+            margin: 110px 0 0 0; }
+            
+         /*　----------コンテンツ　右下画像---------　*/
+#container_right_bottom img { 
+            position: absolute;
+            top: 240vw; right: 3vw; 
+            width: 60%; }
+          /*　----------コンテンツ左---------　*/   
+
+.maru_body { 
+            top: 20%; left: 0%; 
+            text-align: center;
+            font-size: 4vw; line-height: 1.5;
+            color: #8eb4bc; }
+.maru img {
+            width: 77%;  }
+#maru1 {  
+            width: 40%; padding: 40%;
+            top: 1vw; left: 1vw; }
+#maru2 {  
+            width: 35%; padding: 35%;
+            top: 80vw; left: 25vw; }
+#maru3 {  
+            width: 40%; padding: 40%;
+            top: 150vw; left: 1vw; }
+#maru4 {  
+            width: 10%; padding: 10%;
+            top: 5vw; left: 70vw; }
+#maru5 {  
+            width: 5%; padding: 5%;
+            top: 70vw; left: 80vw; }
+#maru6 {  
+            width: 15%; padding: 15%;
+            top: 80vw; left: 3vw; }
+#maru7 {  
+            width: 5%; padding: 5%;
+            top: 150vw; left: 60vw; }
+}
